@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>St. John Travel Guide - In the VI</title>
     
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E47ZE0YF2J"></script>
     <script>
@@ -13,59 +16,62 @@
       gtag('js', new Date());
       gtag('config', 'G-E47ZE0YF2J');
     </script>
-
-    <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; line-height: 1.7; color: #333; }
-        nav { background: #001f3f; padding: 15px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        header { background: linear-gradient(rgba(0,31,63,0.75), rgba(0,31,63,0.85)), url('/cane-bay.png') center/cover; color: white; text-align: center; padding: 140px 20px 100px; }
-        section { padding: 70px 20px; max-width: 1100px; margin: 0 auto; }
-        .affiliate-button {
-            background: #00b7eb;
-            color: white;
-            padding: 16px 36px;
-            font-size: 1.2rem;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            font-weight: bold;
-            margin: 12px;
-        }
-        footer { background: #001f3f; color: white; text-align: center; padding: 50px 20px; font-size: 0.9rem; }
-    </style>
 </head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="guides.html">Guides</a>
-        <a href="rentals.html">Rentals</a>
-        <a href="real-estate.html">Real Estate</a>
-        <a href="about.html">About</a>
+<body class="bg-zinc-50 text-zinc-800">
+    <nav class="bg-[#001f3f] text-white py-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold">In the VI</div>
+            <div class="space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-sky-400">Home</a>
+                <a href="guides.html" class="hover:text-sky-400">Guides</a>
+                <a href="rentals.html" class="hover:text-sky-400">Rentals</a>
+                <a href="real-estate.html" class="hover:text-sky-400">Real Estate</a>
+                <a href="about.html" class="hover:text-sky-400">About</a>
+            </div>
+        </div>
     </nav>
 
-    <header>
-        <h1>St. John Travel Guide</h1>
-        <p>The most pristine and beautiful of the US Virgin Islands</p>
+    <!-- Hero -->
+    <header class="bg-cover bg-center h-[70vh] flex items-center justify-center text-white relative" 
+            style="background-image: linear-gradient(rgba(0,31,63,0.7), rgba(0,31,63,0.8)), url('/cane-bay.png');">
+        <div class="text-center px-6 max-w-4xl">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">St. John Travel Guide</h1>
+            <p class="text-2xl">The most pristine and protected island in the US Virgin Islands</p>
+        </div>
     </header>
 
-    <section>
-        <h2>Why Visitors Love St. John</h2>
-        <p>More than two-thirds of St. John is protected as Virgin Islands National Park. The island offers world-class snorkeling, quiet beaches, and excellent hiking trails. It has a more relaxed, natural feel than St. Thomas.</p>
+    <div class="max-w-4xl mx-auto px-6 py-16 prose prose-lg">
+        <p class="lead">If you want turquoise water, powdery beaches, and a genuine sense of nature, St. John is the crown jewel of the USVI. Over 60% of the island is protected as Virgin Islands National Park, giving it a relaxed, unspoiled character that sets it apart from its busier neighbors.</p>
 
-        <h2>Top Snorkeling Spots</h2>
-        <p>Waterlemon Cay is one of the best places in the Caribbean to snorkel with sea turtles. Trunk Bay has a famous underwater snorkel trail. For the best experience, a good mask and fins make a significant difference.</p>
-        <a href="https://www.amazon.com/Oceanic-Snorkel-Set-Adult-Snorkeling/dp/B0G2TGMT3P" target="_blank" class="affiliate-button">Recommended Snorkel Set</a>
+        <h2>Best Beaches on St. John</h2>
+        <ul>
+            <li><strong>Trunk Bay</strong> – Famous for its underwater snorkel trail. One of the most photographed beaches in the Caribbean.</li>
+            <li><strong>Cinnamon Bay</strong> – Long, wide beach with calm waters and good facilities.</li>
+            <li><strong>Hawksnest Bay</strong> – Quiet and beautiful, great for swimming and picnics.</li>
+            <li><strong>Waterlemon Cay</strong> – World-class snorkeling with frequent sea turtle sightings.</li>
+        </ul>
 
-        <h2>Beach & Boat Days</h2>
-        <p>Many visitors spend full days on boats or at remote beaches. A waterproof dry bag is invaluable for keeping phones, wallets, and towels safe and dry.</p>
-        <a href="https://www.amazon.com/MARCHWAY-Floating-Waterproof-Kayaking-Swimming/dp/B07SQZ3PQB" target="_blank" class="affiliate-button">Recommended Waterproof Dry Bag</a>
-    </section>
+        <h2>Snorkeling & Water Activities</h2>
+        <p>St. John’s underwater world is exceptional. For the best experience, proper equipment makes a noticeable difference — especially a good mask and fins that fit well and a dry snorkel. Many visitors rent gear, but bringing your own favorite set is often more comfortable.</p>
+        <a href="https://www.amazon.com/Oceanic-Snorkel-Set-Adult-Snorkeling/dp/B0G2TGMT3P" target="_blank" 
+           class="inline-block bg-sky-500 hover:bg-sky-600 text-white px-8 py-4 rounded-full font-medium mt-4">
+            Recommended Snorkel Mask & Fins Set
+        </a>
 
-    <footer>
+        <h2>Practical Tips for a Better Trip</h2>
+        <p>Many visitors spend full days on boats or at remote beaches. A waterproof dry bag is one of the most useful items you can bring — it keeps phones, wallets, towels, and snacks safe and dry even if the boat gets splashed or you go swimming.</p>
+        <a href="https://www.amazon.com/MARCHWAY-Floating-Waterproof-Kayaking-Swimming/dp/B07SQZ3PQB" target="_blank" 
+           class="inline-block bg-sky-500 hover:bg-sky-600 text-white px-8 py-4 rounded-full font-medium mt-4">
+            Recommended Waterproof Dry Bag
+        </a>
+
+        <h2>Getting Around & Staying</h2>
+        <p>Most people rent a jeep or take taxis. Ferries from St. Thomas arrive at Cruz Bay. Villa rentals are very popular here — many are tucked into the hills with stunning views.</p>
+    </div>
+
+    <footer class="bg-[#001f3f] text-white py-12 text-center">
         <p>&copy; 2026 In the VI • All Rights Reserved</p>
-        <p><small><strong>Affiliate Disclosure:</strong> This site contains affiliate links. We may earn a commission at no extra cost to you if you make a purchase through our links.</small></p>
+        <p class="text-sm mt-4"><strong>Affiliate Disclosure:</strong> This site contains affiliate links. We may earn a commission at no extra cost to you if you make a purchase through our links.</p>
     </footer>
 </body>
 </html>
