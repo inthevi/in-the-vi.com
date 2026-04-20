@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>In the VI | US & British Virgin Islands Travel, Villas & Real Estate</title>
-    <meta name="description" content="Complete guide to the Virgin Islands: Best beaches, vacation rentals, real estate, and expat advice for St. Thomas, St. John, St. Croix, Tortola & more.">
+    <meta name="description" content="Complete guide to the Virgin Islands: beaches, vacation rentals, real estate, and expat advice.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E47ZE0YF2J"></script>
@@ -16,67 +19,54 @@
     </script>
 
     <style>
-        body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            margin: 0; padding: 0; 
-            line-height: 1.6; 
-            color: #333; 
-        }
-        header {
-            background: linear-gradient(rgba(0,31,63,0.55), rgba(0,31,63,0.8)), url('/cane-bay.png') center/cover no-repeat fixed;
-            color: white;
-            text-align: center;
-            padding: 160px 20px 120px;
-        }
-        nav { background: #001f3f; padding: 15px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        .cta-button {
-            background: #00b7eb;
-            color: white;
-            padding: 18px 42px;
-            font-size: 1.3rem;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            font-weight: bold;
-        }
-        section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; text-align: center; }
-        footer { 
-            background: #001f3f; 
-            color: white; 
-            text-align: center; 
-            padding: 50px 20px; 
-            font-size: 0.9rem;
-        }
+        body { font-family: system-ui, -apple-system, sans-serif; }
     </style>
 </head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="guides.html">Guides</a>
-        <a href="rentals.html">Rentals</a>
-        <a href="real-estate.html">Real Estate</a>
-        <a href="about.html">About</a>
+<body class="bg-zinc-50 text-zinc-800">
+    <!-- Navigation -->
+    <nav class="bg-[#001f3f] text-white py-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold">In the VI</div>
+            <div class="space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-sky-400">Home</a>
+                <a href="guides.html" class="hover:text-sky-400">Guides</a>
+                <a href="rentals.html" class="hover:text-sky-400">Rentals</a>
+                <a href="real-estate.html" class="hover:text-sky-400">Real Estate</a>
+                <a href="about.html" class="hover:text-sky-400">About</a>
+            </div>
+        </div>
     </nav>
 
-    <header>
-        <h1>In the VI</h1>
-        <p class="tagline">US & British Virgin Islands • Travel • Vacation Rentals • Real Estate • Expat Life</p>
-        <a href="rentals.html" class="cta-button">Find Vacation Rentals</a>
+    <!-- Hero -->
+    <header class="bg-cover bg-center h-screen flex items-center justify-center text-white relative" 
+            style="background-image: linear-gradient(rgba(0,31,63,0.75), rgba(0,31,63,0.75)), url('/cane-bay.png');">
+        <div class="text-center px-6 max-w-4xl">
+            <h1 class="text-6xl md:text-7xl font-bold mb-6">In the VI</h1>
+            <p class="text-2xl md:text-3xl mb-10">US & British Virgin Islands Travel • Villas • Real Estate</p>
+            <a href="rentals.html" 
+               class="inline-block bg-sky-500 hover:bg-sky-600 text-white text-xl font-semibold px-10 py-5 rounded-full transition">
+                Find Vacation Rentals
+            </a>
+        </div>
     </header>
 
-    <section>
-        <h2>Start Planning Your Perfect VI Trip</h2>
-        <p style="font-size:1.3rem; max-width:850px; margin:25px auto;">
-            In-depth guides, best beaches, villa rentals, real estate info, and local tips for St. Thomas, St. John, St. Croix, Tortola, and beyond.
-        </p>
-    </section>
+    <div class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-4xl font-semibold text-center mb-12">Start Planning Your Trip</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <a href="st-thomas-guide.html" class="block bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition">
+                <div class="h-52 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1015/800/400')"></div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-3">St. Thomas Guide</h3>
+                    <p class="text-zinc-600">Shopping, beaches, and the busy hub of the USVI.</p>
+                </div>
+            </a>
+            <!-- Similar cards for St. John and St. Croix will be added in next step -->
+        </div>
+    </div>
 
-    <footer>
+    <footer class="bg-[#001f3f] text-white py-12 text-center">
         <p>&copy; 2026 In the VI • All Rights Reserved</p>
-        <p><small><strong>Affiliate Disclosure:</strong> This site contains affiliate links. We may earn a commission at no extra cost to you if you make a purchase through our links. Thank you for supporting the site!</small></p>
+        <p class="text-sm mt-4"><strong>Affiliate Disclosure:</strong> This site contains affiliate links. We may earn a commission at no extra cost to you.</p>
     </footer>
 </body>
 </html>
