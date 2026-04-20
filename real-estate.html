@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate - In the VI</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E47ZE0YF2J"></script>
     <script>
@@ -9,46 +16,46 @@
       gtag('js', new Date());
       gtag('config', 'G-E47ZE0YF2J');
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate - In the VI</title>
-    <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
-        nav { background: #001f3f; padding: 15px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        header { background: linear-gradient(rgba(0,31,63,0.8), rgba(0,31,63,0.8)), url('/cane-bay.png') center/cover; color: white; text-align: center; padding: 100px 20px; }
-        section { padding: 60px 20px; max-width: 1100px; margin: 0 auto; }
-        footer { 
-            background: #001f3f; 
-            color: white; 
-            text-align: center; 
-            padding: 50px 20px; 
-            font-size: 0.9rem;
-        }
-    </style>
 </head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="guides.html">Guides</a>
-        <a href="rentals.html">Rentals</a>
-        <a href="real-estate.html">Real Estate</a>
-        <a href="about.html">About</a>
+<body class="bg-zinc-50 text-zinc-800">
+    <nav class="bg-[#001f3f] text-white py-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold">In the VI</div>
+            <div class="space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-sky-400">Home</a>
+                <a href="guides.html" class="hover:text-sky-400">Guides</a>
+                <a href="rentals.html" class="hover:text-sky-400">Rentals</a>
+                <a href="real-estate.html" class="hover:text-sky-400">Real Estate</a>
+                <a href="about.html" class="hover:text-sky-400">About</a>
+            </div>
+        </div>
     </nav>
 
-    <header>
-        <h1>Real Estate in the Virgin Islands</h1>
-        <p>Buying property, cost of living & relocation info</p>
+    <header class="bg-[#001f3f] text-white py-24">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Real Estate in the Virgin Islands</h1>
+            <p class="text-2xl text-sky-300">Buying property, cost of living, and relocation guidance for USVI & BVI</p>
+        </div>
     </header>
 
-    <section>
-        <h2>Coming Soon</h2>
-        <p>Detailed guides on purchasing property in USVI and BVI, tax advantages, and current market conditions.</p>
-    </section>
+    <div class="max-w-6xl mx-auto px-6 py-16">
+        <div class="prose max-w-none">
+            <h2 class="text-3xl font-semibold mb-6">Why Consider the Virgin Islands?</h2>
+            <p class="text-lg leading-relaxed">The USVI and BVI offer unique advantages for second homes, investment properties, and full-time relocation — including territorial tax benefits, stunning views, and a Caribbean lifestyle.</p>
+            
+            <h2 class="text-3xl font-semibold mt-12 mb-6">Topics Covered Soon</h2>
+            <ul class="list-disc pl-6 space-y-3 text-lg">
+                <li>Buying process for non-residents</li>
+                <li>Cost of living comparison (USVI vs BVI vs mainland)</li>
+                <li>Popular areas and current market trends</li>
+                <li>Visa and residency options</li>
+            </ul>
+        </div>
+    </div>
 
-    <footer>
+    <footer class="bg-[#001f3f] text-white py-12 text-center">
         <p>&copy; 2026 In the VI • All Rights Reserved</p>
-        <p><small><strong>Affiliate Disclosure:</strong> This site contains affiliate links. We may earn a commission at no extra cost to you if you make a purchase through our links.</small></p>
+        <p class="text-sm mt-4"><strong>Affiliate Disclosure:</strong> This site contains affiliate links. We may earn a commission at no extra cost to you if you make a purchase through our links.</p>
     </footer>
 </body>
 </html>
