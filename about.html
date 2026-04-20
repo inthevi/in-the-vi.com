@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - In the VI</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E47ZE0YF2J"></script>
     <script>
@@ -9,46 +16,41 @@
       gtag('js', new Date());
       gtag('config', 'G-E47ZE0YF2J');
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - In the VI</title>
-    <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
-        nav { background: #001f3f; padding: 15px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        header { background: linear-gradient(rgba(0,31,63,0.8), rgba(0,31,63,0.8)), url('/cane-bay.png') center/cover; color: white; text-align: center; padding: 100px 20px; }
-        section { padding: 60px 20px; max-width: 1100px; margin: 0 auto; }
-        footer { 
-            background: #001f3f; 
-            color: white; 
-            text-align: center; 
-            padding: 50px 20px; 
-            font-size: 0.9rem;
-        }
-    </style>
 </head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="guides.html">Guides</a>
-        <a href="rentals.html">Rentals</a>
-        <a href="real-estate.html">Real Estate</a>
-        <a href="about.html">About</a>
+<body class="bg-zinc-50 text-zinc-800">
+    <nav class="bg-[#001f3f] text-white py-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold">In the VI</div>
+            <div class="space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-sky-400">Home</a>
+                <a href="guides.html" class="hover:text-sky-400">Guides</a>
+                <a href="rentals.html" class="hover:text-sky-400">Rentals</a>
+                <a href="real-estate.html" class="hover:text-sky-400">Real Estate</a>
+                <a href="about.html" class="hover:text-sky-400">About</a>
+            </div>
+        </div>
     </nav>
 
-    <header>
-        <h1>About In the VI</h1>
-    </header>
+    <div class="max-w-4xl mx-auto px-6 py-20">
+        <h1 class="text-5xl font-bold text-center mb-6">About In the VI</h1>
+        <p class="text-xl text-center text-zinc-600 mb-16">Your independent guide to the US & British Virgin Islands</p>
 
-    <section>
-        <h2>Your Independent Virgin Islands Hub</h2>
-        <p>This site is dedicated to providing the most useful, up-to-date information for anyone visiting, staying, or moving to the US Virgin Islands or British Virgin Islands.</p>
-        <p>We focus on practical travel advice, vacation rental recommendations, real estate insights, and expat/relocation guidance.</p>
-    </section>
+        <div class="prose prose-lg max-w-none">
+            <p class="text-lg leading-relaxed">In the VI was created to provide practical, honest, and up-to-date information for people visiting, staying, or considering moving to the Virgin Islands.</p>
+            
+            <p class="text-lg leading-relaxed">We focus on what actually matters to travelers and expats: the best beaches, reliable vacation rentals, real estate insights, cost of living details, and local tips that make your trip smoother and more enjoyable.</p>
 
-    <footer>
+            <h2 class="text-3xl font-semibold mt-12">Our Goal</h2>
+            <p>We aim to be the most useful resource for the US Virgin Islands (St. Thomas, St. John, St. Croix) and the British Virgin Islands (Tortola, Virgin Gorda, Anegada, Jost Van Dyke, and beyond).</p>
+
+            <h2 class="text-3xl font-semibold mt-12">Why Trust Us?</h2>
+            <p>This site is independently run. We personally research and test the recommendations we share. Our affiliate links help support the site at no extra cost to you, allowing us to continue creating free, high-quality content.</p>
+        </div>
+    </div>
+
+    <footer class="bg-[#001f3f] text-white py-12 text-center">
         <p>&copy; 2026 In the VI • All Rights Reserved</p>
-        <p><small><strong>Affiliate Disclosure:</strong> This site contains affiliate links. We may earn a commission at no extra cost to you if you make a purchase through our links. Thank you for supporting the site!</small></p>
+        <p class="text-sm mt-4"><strong>Affiliate Disclosure:</strong> This site contains affiliate links. We may earn a commission at no extra cost to you if you make a purchase through our links.</p>
     </footer>
 </body>
 </html>
