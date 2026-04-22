@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>St. Croix Travel Guide - In the VI</title>
     
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E47ZE0YF2J"></script>
     <script>
@@ -13,56 +16,57 @@
       gtag('js', new Date());
       gtag('config', 'G-E47ZE0YF2J');
     </script>
-
-    <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; line-height: 1.7; color: #333; }
-        nav { background: #001f3f; padding: 15px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        header { background: linear-gradient(rgba(0,31,63,0.75), rgba(0,31,63,0.85)), url('/cane-bay.png') center/cover; color: white; text-align: center; padding: 140px 20px 100px; }
-        section { padding: 70px 20px; max-width: 1100px; margin: 0 auto; }
-        .affiliate-button {
-            background: #00b7eb;
-            color: white;
-            padding: 16px 36px;
-            font-size: 1.2rem;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            font-weight: bold;
-            margin: 12px;
-        }
-        footer { background: #001f3f; color: white; text-align: center; padding: 50px 20px; font-size: 0.9rem; }
-    </style>
 </head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="guides.html">Guides</a>
-        <a href="rentals.html">Rentals</a>
-        <a href="real-estate.html">Real Estate</a>
-        <a href="about.html">About</a>
+<body class="bg-zinc-50 text-zinc-800">
+    <nav class="bg-[#001f3f] text-white py-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold">In the VI</div>
+            <div class="space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-sky-400">Home</a>
+                <a href="guides.html" class="hover:text-sky-400">Guides</a>
+                <a href="rentals.html" class="hover:text-sky-400">Rentals</a>
+                <a href="real-estate.html" class="hover:text-sky-400">Real Estate</a>
+                <a href="about.html" class="hover:text-sky-400">About</a>
+            </div>
+        </div>
     </nav>
 
-    <header>
-        <h1>St. Croix Travel Guide</h1>
-        <p>The largest and most laid-back of the US Virgin Islands</p>
+    <!-- Hero using your STX image -->
+    <header class="bg-cover bg-center h-[70vh] flex items-center justify-center text-white relative" 
+            style="background-image: linear-gradient(rgba(0,31,63,0.7), rgba(0,31,63,0.85)), url('/Christiansted waterfront STX.jpg');">
+        <div class="text-center px-6 max-w-4xl">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">St. Croix Travel Guide</h1>
+            <p class="text-2xl">The largest and most laid-back of the US Virgin Islands</p>
+        </div>
     </header>
 
-    <section>
-        <h2>St. Croix at a Glance</h2>
-        <p>St. Croix offers a slower pace, beautiful beaches, historic towns, and excellent snorkeling. It’s ideal for travelers who want authentic Caribbean life rather than heavy tourism.</p>
+    <div class="max-w-4xl mx-auto px-6 py-16 prose prose-lg">
+        <p class="lead">St. Croix offers a more authentic and relaxed Caribbean experience than its sister islands. With historic towns, excellent snorkeling, rum distilleries, and beautiful beaches on both the north and south shores, it appeals to travelers who want to slow down and explore.</p>
 
-        <h2>Sun & Beach Protection</h2>
-        <p>The sun is very strong here year-round. Reef-safe sunscreen is required by law. Many visitors also appreciate a good wide-brim hat for extra protection during long beach days or exploring Christiansted and Frederiksted.</p>
-        <a href="https://www.amazon.com/Sunscreen-Protection-Lightweight-Non-Greasy-Resistant/dp/B0GDFMR55Z" target="_blank" class="affiliate-button">Recommended Reef-Safe Sunscreen (2-Pack)</a>
-        <a href="https://www.amazon.com/TILUYAMO-Waterproof-Outdoor-Protection-Packable/dp/B0DYYZNS3R" target="_blank" class="affiliate-button">Recommended Wide Brim Sun Hat</a>
-    </section>
+        <h2>Best Beaches on St. Croix</h2>
+        <p>Cane Bay is famous for excellent snorkeling and diving right off the shore. Frederiksted Pier and Sandy Point offer long stretches of sand, while the East End beaches are quieter and more secluded.</p>
 
-    <footer>
+        <h2>Sun Protection</h2>
+        <p>The sun is intense year-round in the Virgin Islands. Reef-safe sunscreen is required by law to protect the coral reefs that make the islands so beautiful.</p>
+        <a href="https://www.amazon.com/Sunscreen-Protection-Lightweight-Non-Greasy-Resistant/dp/B0GDFMR55Z" target="_blank" 
+           class="inline-block bg-sky-500 hover:bg-sky-600 text-white px-8 py-4 rounded-full font-medium mt-4">
+            Recommended Reef-Safe Sunscreen (2-Pack)
+        </a>
+
+        <h2>Practical Sun & Beach Gear</h2>
+        <p>A wide-brim hat provides excellent additional protection during long days at the beach or exploring Christiansted and Frederiksted.</p>
+        <a href="https://www.amazon.com/TILUYAMO-Waterproof-Outdoor-Protection-Packable/dp/B0DYYZNS3R" target="_blank" 
+           class="inline-block bg-sky-500 hover:bg-sky-600 text-white px-8 py-4 rounded-full font-medium mt-4">
+            Recommended Wide Brim Sun Hat
+        </a>
+
+        <h2>Things to Do</h2>
+        <p>Visit the historic districts of Christiansted and Frederiksted, tour the rum distilleries, snorkel at Buck Island, or hike in the rainforest. St. Croix rewards those who take their time.</p>
+    </div>
+
+    <footer class="bg-[#001f3f] text-white py-12 text-center">
         <p>&copy; 2026 In the VI • All Rights Reserved</p>
-        <p><small><strong>Affiliate Disclosure:</strong> This site contains affiliate links. We may earn a commission at no extra cost to you if you make a purchase through our links.</small></p>
+        <p class="text-sm mt-4"><strong>Affiliate Disclosure:</strong> This site contains affiliate links. We may earn a commission at no extra cost to you if you make a purchase through our links.</p>
     </footer>
 </body>
 </html>
