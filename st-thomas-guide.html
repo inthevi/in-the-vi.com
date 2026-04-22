@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>St. Thomas Travel Guide - In the VI</title>
     
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E47ZE0YF2J"></script>
     <script>
@@ -13,59 +16,54 @@
       gtag('js', new Date());
       gtag('config', 'G-E47ZE0YF2J');
     </script>
-
-    <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; line-height: 1.7; color: #333; }
-        nav { background: #001f3f; padding: 15px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        header { background: linear-gradient(rgba(0,31,63,0.75), rgba(0,31,63,0.85)), url('/cane-bay.png') center/cover; color: white; text-align: center; padding: 140px 20px 100px; }
-        section { padding: 70px 20px; max-width: 1100px; margin: 0 auto; }
-        .affiliate-button {
-            background: #00b7eb;
-            color: white;
-            padding: 16px 36px;
-            font-size: 1.2rem;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            font-weight: bold;
-            margin: 12px;
-        }
-        footer { background: #001f3f; color: white; text-align: center; padding: 50px 20px; font-size: 0.9rem; }
-    </style>
 </head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="guides.html">Guides</a>
-        <a href="rentals.html">Rentals</a>
-        <a href="real-estate.html">Real Estate</a>
-        <a href="about.html">About</a>
+<body class="bg-zinc-50 text-zinc-800">
+    <nav class="bg-[#001f3f] text-white py-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold">In the VI</div>
+            <div class="space-x-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-sky-400">Home</a>
+                <a href="guides.html" class="hover:text-sky-400">Guides</a>
+                <a href="rentals.html" class="hover:text-sky-400">Rentals</a>
+                <a href="real-estate.html" class="hover:text-sky-400">Real Estate</a>
+                <a href="about.html" class="hover:text-sky-400">About</a>
+            </div>
+        </div>
     </nav>
 
-    <header>
-        <h1>St. Thomas Travel Guide</h1>
-        <p>The bustling heart of the US Virgin Islands</p>
+    <!-- Hero using your STT image -->
+    <header class="bg-cover bg-center h-[70vh] flex items-center justify-center text-white relative" 
+            style="background-image: linear-gradient(rgba(0,31,63,0.7), rgba(0,31,63,0.85)), url('/Magens Bay beach STT.jpg');">
+        <div class="text-center px-6 max-w-4xl">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">St. Thomas Travel Guide</h1>
+            <p class="text-2xl">The vibrant heart and main hub of the US Virgin Islands</p>
+        </div>
     </header>
 
-    <section>
-        <h2>St. Thomas at a Glance</h2>
-        <p>St. Thomas is the most visited and developed of the USVI. It offers excellent shopping in Charlotte Amalie, beautiful beaches like Magens Bay, and serves as the main hub for ferries and flights to other islands.</p>
+    <div class="max-w-4xl mx-auto px-6 py-16 prose prose-lg">
+        <p class="lead">St. Thomas is the busiest and most developed of the US Virgin Islands. It serves as the main entry point for most visitors, with excellent shopping in Charlotte Amalie, beautiful beaches, and easy ferry access to St. John and the BVI.</p>
 
-        <h2>Beach Days & Day Trips</h2>
-        <p>Whether you're heading to Magens Bay, Coki Beach, or taking a day sail, having the right gear makes a big difference. A good insulated beach bag helps keep drinks cold and food fresh — especially useful since many travelers buy groceries to prepare meals at their villa rather than eating out every time.</p>
-        <a href="https://www.amazon.com/HUANLANG-Insulated-Zippered-Collapsible-Delivery/dp/B0FVLM9XBX" target="_blank" class="affiliate-button">Recommended Insulated Beach Cooler Bag</a>
+        <h2>Best Beaches on St. Thomas</h2>
+        <p>Magens Bay is consistently ranked among the most beautiful beaches in the world. Coki Beach offers great snorkeling right off the shore, while Sapphire Beach is popular with families and water-sports enthusiasts.</p>
 
-        <h2>Sun Protection</h2>
-        <p>The Caribbean sun is intense. Reef-safe sunscreen is required by law in the USVI to protect the coral reefs. A quality broad-spectrum option is essential.</p>
-        <a href="https://www.amazon.com/Sunscreen-Protection-Lightweight-Non-Greasy-Resistant/dp/B0GDFMR55Z" target="_blank" class="affiliate-button">Recommended Reef-Safe Sunscreen (2-Pack)</a>
-    </section>
+        <h2>Practical Tips for St. Thomas</h2>
+        <p>The sun is intense here. Reef-safe sunscreen is required by law throughout the USVI to protect the coral reefs. A quality broad-spectrum option is essential for all-day beach or boat activities.</p>
+        <a href="https://www.amazon.com/Sunscreen-Protection-Lightweight-Non-Greasy-Resistant/dp/B0GDFMR55Z" target="_blank" 
+           class="inline-block bg-sky-500 hover:bg-sky-600 text-white px-8 py-4 rounded-full font-medium mt-4">
+            Recommended Reef-Safe Sunscreen (2-Pack)
+        </a>
 
-    <footer>
+        <h2>Day Trips & Shopping</h2>
+        <p>Many visitors spend time exploring Charlotte Amalie for duty-free shopping or taking a day sail. An insulated beach bag with a cooler compartment is very handy for keeping drinks cold and snacks fresh when buying groceries for your villa.</p>
+        <a href="https://www.amazon.com/HUANLANG-Insulated-Zippered-Collapsible-Delivery/dp/B0FVLM9XBX" target="_blank" 
+           class="inline-block bg-sky-500 hover:bg-sky-600 text-white px-8 py-4 rounded-full font-medium mt-4">
+            Recommended Insulated Beach Cooler Bag
+        </a>
+    </div>
+
+    <footer class="bg-[#001f3f] text-white py-12 text-center">
         <p>&copy; 2026 In the VI • All Rights Reserved</p>
-        <p><small><strong>Affiliate Disclosure:</strong> This site contains affiliate links. We may earn a commission at no extra cost to you if you make a purchase through our links.</small></p>
+        <p class="text-sm mt-4"><strong>Affiliate Disclosure:</strong> This site contains affiliate links. We may earn a commission at no extra cost to you if you make a purchase through our links.</p>
     </footer>
 </body>
 </html>
