@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Resources & Downloads | In the VI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        .resource-card {
+            transition: all 0.3s ease;
+        }
+        .resource-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .thumbnail-container {
+            transition: transform 0.4s ease;
+        }
+        .resource-card:hover .thumbnail-container {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="bg-zinc-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center gap-3">
+                <img src="assets/In-The-VI logo transparent bg cropped.png" 
+                     alt="In the VI Logo" 
+                     class="h-10">
+            </a>
+            <div class="flex gap-8 text-sm font-medium">
+                <a href="/" class="hover:text-blue-600">Home</a>
+                <a href="/guides.html" class="hover:text-blue-600">Guides</a>
+                <a href="/rentals.html" class="hover:text-blue-600">Rentals</a>
+                <a href="/real-estate.html" class="hover:text-blue-600">Real Estate</a>
+                <a href="/st-john-guide.html" class="hover:text-blue-600">St. John</a>
+                <a href="/st-thomas-guide.html" class="hover:text-blue-600">St. Thomas</a>
+                <a href="/resources.html" class="text-blue-600 font-semibold">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <!-- Hero -->
+        <div class="text-center mb-16">
+            <h1 class="text-5xl font-bold text-zinc-900 mb-4">Free Resources & Downloads</h1>
+            <p class="text-xl text-zinc-600 max-w-2xl mx-auto">
+                Practical, high-quality guides designed to make your Virgin Islands trip smoother, smarter, and more enjoyable.
+            </p>
+        </div>
+
+        <!-- Resources Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Ultimate Packing List -->
+            <div class="resource-card bg-white rounded-3xl overflow-hidden shadow-sm border border-zinc-100 group">
+                <a href="assets/Ultimate_Virgin_Islands_Packing_List_2026.pdf" 
+                   download="Ultimate_Virgin_Islands_Packing_List_2026.pdf"
+                   class="block">
+                    <div class="thumbnail-container aspect-[4/3] bg-zinc-100 border-b flex items-center justify-center overflow-hidden">
+                        <img src="assets/packing-list-thumbnail.jpg" 
+                             alt="Ultimate Virgin Islands Packing List Preview"
+                             class="w-full h-full object-cover">
+                    </div>
+                </a>
+                
+                <div class="p-8">
+                    <a href="assets/Ultimate_Virgin_Islands_Packing_List_2026.pdf" 
+                       download="Ultimate_Virgin_Islands_Packing_List_2026.pdf"
+                       class="block group-hover:text-blue-600 transition-colors">
+                        <h3 class="text-2xl font-semibold text-zinc-900 mb-3">
+                            Ultimate Virgin Islands Packing List
+                        </h3>
+                    </a>
+                    <p class="text-zinc-600 mb-8 leading-relaxed">
+                        2026 Edition — The most comprehensive, reef-safe packing checklist for the US & British Virgin Islands. 
+                        Includes island-specific tips, quantities, and pro recommendations.
+                    </p>
+                    
+                    <a href="assets/Ultimate_Virgin_Islands_Packing_List_2026.pdf" 
+                       download="Ultimate_Virgin_Islands_Packing_List_2026.pdf"
+                       class="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-medium transition-all">
+                        <i class="fa-solid fa-download"></i>
+                        Download PDF — Free
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- More Resources Teaser -->
+        <div class="mt-20 text-center border-t border-zinc-200 pt-16">
+            <h2 class="text-3xl font-semibold mb-6">More Resources Coming Soon</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-left max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-2xl">7-Day St. John Itinerary</div>
+                <div class="bg-white p-6 rounded-2xl">Best Snorkel Spots Guide</div>
+                <div class="bg-white p-6 rounded-2xl">Virgin Islands Provisioning Guide</div>
+                <div class="bg-white p-6 rounded-2xl">Ferry Schedule Cheat Sheet</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <!-- Paste your existing footer code here -->
+
+</body>
+</html>
